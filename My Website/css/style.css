@@ -31,10 +31,16 @@ Color Pallete:
     padding-bottom: 5px;
 }
 
+.navbar-nav {
+    text-align: right;
+    color: black;
+}
+
 .menu-bar .navbar-toggler {
     color: white!important;
     padding-right: 20px;
     outline: none!important;
+    border: none!important;
 }
 
 .navbar-brand {
