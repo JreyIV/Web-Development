@@ -138,72 +138,106 @@ body {
     }
 }
 
-@media(max-width: 1400px){
-    .home-text h1 {
-        font-weight: 900!important;
-        font-size: 60px!important;
-    }
 
-    .home-text p {
-        font-weight: 600;
-        font-size: 30px;
-        font-family: 'Source Code Pro', monospace;
-        position: relative;
-        width: max-content;
-    }
+/* --------about--------- */
+
+#about {
+    height: 100vh;
 }
 
-@media(max-width: 1068px){
-    .home-text h1 {
-        font-weight: 900!important;
-        font-size: 50px!important;
-    }
-
-    .home-text p {
-        font-weight: 600;
-        font-size: 20px;
-        font-family: 'Source Code Pro', monospace;
-        position: relative;
-        width: max-content;
-    }
+.flex-wrapper {
+    text-align: center;
 }
 
-@media(max-width: 992px) {
-    .home-text {
-        justify-content: center;
-        position: relative;
-        bottom: 50%;
-        /* background-color: red; */
-    }
-    .home-text h1 {
-        font-weight: 900!important;
-        font-size: 60px!important;
-    }
-    .home-text p {
-        font-weight: 600;
-        font-size: 30px;
-        font-family: 'Source Code Pro', monospace;
-        position: relative;
-        width: max-content;
-    }
+.flex-wrapper h3 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #246a73;
 }
 
-@media(max-width: 768px) {
-    .home-text {
-        justify-content: center;
-        position: relative;
-        bottom: 50%;
-        /* background-color: red; */
+
+/* media */
+
+    @media(max-width: 1400px){
+        .home-text h1 {
+            font-weight: 900!important;
+            font-size: 60px!important;
+        }
+    
+        .home-text p {
+            font-weight: 600;
+            font-size: 30px;
+            font-family: 'Source Code Pro', monospace;
+            position: relative;
+            width: max-content;
+        }
     }
-    .home-text h1 {
-        font-weight: 900!important;
-        font-size: 50px!important;
+    
+    @media(max-width: 1068px){
+        .home-text h1 {
+            font-weight: 900!important;
+            font-size: 50px!important;
+        }
+    
+        .home-text p {
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Source Code Pro', monospace;
+            position: relative;
+            width: max-content;
+        }
     }
-    .home-text p {
-        font-weight: 600;
-        font-size: 25px;
-        font-family: 'Source Code Pro', monospace;
-        position: relative;
-        width: max-content;
+    
+    /* large screen */
+    @media(max-width: 992px) {
+        .home-text {
+            justify-content: center;
+            position: relative;
+            bottom: 50%;
+            /* background-color: red; */
+        }
+        .home-text h1 {
+            font-weight: 900!important;
+            font-size: 60px!important;
+        }
+        .home-text p {
+            font-weight: 600;
+            font-size: 30px;
+            font-family: 'Source Code Pro', monospace;
+            position: relative;
+            width: max-content;
+        }
     }
-}
+    
+    /* medium screen */
+    @media(max-width: 768px) {
+        .home-text {
+            justify-content: center;
+            position: relative;
+            bottom: 50%;
+            /* background-color: red; */
+        }
+        .home-text h1 {
+            font-weight: 900!important;
+            font-size: 50px!important;
+        }
+        .home-text p {
+            font-weight: 600;
+            font-size: 25px;
+            font-family: 'Source Code Pro', monospace;
+            position: relative;
+            width: max-content;
+        }
+
+        #about {
+            justify-content: center;
+        }
+
+        #about img {
+            display: none;
+        }
+
+        .flex-wrapper{
+            padding-top: 25%;
+        }
+    }
