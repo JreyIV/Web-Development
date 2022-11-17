@@ -14,33 +14,37 @@
     <!-- google font (nunito) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <title>Joseph's Portfolio</title>
 </head>
 <body>
     <!-- Nav menu: Home | About | Projects | Contact -->
     <header>
-        <div class="menu-bar">
+        <div class="menu-bar fixed-top">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#"><i class="fa-solid fa-j"></i><i class="fa-solid fa-r"></i><i class="fa-solid fa-code"></i></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                        <a id="nav-link" href="#">Home</a>
+                        <a id="nav-link" href="#home">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a id="nav-link" href="#">About</a>
+                        <a id="nav-link" href="#about">About</a>
                       </li>
                       <li class="nav-item">
-                        <a id="nav-link" href="#">Projects</a>
+                        <a id="nav-link" href="#skills">Skills</a>
                       </li>
                       <li class="nav-item">
-                        <a id="nav-link" href="#">Contact</a>
+                        <a id="nav-link" href="#project">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="nav-link" href="#contact">Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -48,10 +52,55 @@
               </nav>
         </div>
     </header>
+
     <main>
-        <div id="introduction_container">
-            <h1> Hi, I'm Joseph Reyes</h1>
-        </div>
+        
+        <!-- home section -->
+
+        <section id="home" class="home section-padding">
+            <div class="container">
+                <div class="row home-intro">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="home-img">
+                            <img src="media/D16B018D-63A7-4E8A-A130-75D692078024.JPG" alt="profile" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="home-text">
+                            <h4>Hello,</h4>
+                            <h1 > 
+                                I'm <span style="  background: -webkit-linear-gradient(#160f29, #368f8b);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;"> Joseph Reyes</span>
+                            </h1>
+                            <p>I turn passion and ideas into code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about section -->
+
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="row about-sect">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-img">
+                            <i class="fa-solid fa-circle-user" style="width: 50%;"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2>About</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias error dicta architecto hic illo veniam, nisi dolorem cum quos eos necessitatibus, corrupti fuga ut, quis impedit similique reprehenderit. Quos inventore vitae amet necessitatibus molestiae obcaecati aliquid cumque unde minus incidunt soluta aut illo facilis, exercitationem commodi magnam hic corporis voluptas eum voluptate mollitia architecto iste fugit! Ipsam exercitationem eos voluptas, minima sit vero dolores. Repellat magnam laboriosam enim perferendis quos voluptate? Possimus, rerum! Eos neque assumenda tempore inventore quae, quia similique beatae! Porro fugit suscipit placeat sint obcaecati natus nisi ad vero et cumque! Neque quis temporibus eveniet accusantium.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </main>
     

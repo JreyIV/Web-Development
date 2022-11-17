@@ -10,7 +10,7 @@ Color Pallete:
 
 /* ----------- Nav Bar ----------- */
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -33,8 +33,8 @@ Color Pallete:
 
 .navbar-nav {
     text-align: right;
-    color: black;
 }
+
 
 .menu-bar .navbar-toggler {
     color: white!important;
@@ -76,13 +76,89 @@ Color Pallete:
   /* Body */
 
   body {
-    margin: 0px;
+    background-color: #f7f7f2!important;
   }
 
-  #introduction_container {
-    margin: auto;
-    max-width: 600px;
-    border: dashed;
-  }
+/* --------- home --------- */
+.home-intro {
+    height: 100vh;
+    justify-content: center;
+    background-color: #f7f7f2;
+}
 
-  
+.home-img {
+    margin-top: 35%;
+}
+
+.home-text {
+    margin-top: 30%;
+}
+
+.home-text h1 {
+    font-weight: 900!important;
+    font-size: 60px!important;
+}
+
+
+.home-text p {
+    font-weight: 600;
+    font-size: 39px;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content;
+}
+
+/* typewriter animation */
+
+.home-text p::before,
+.home-text p::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.home-text p::before{
+    background: #f7f7f2;
+    animation: typewriter 3s steps(35) 1s forwards;
+}
+
+.home-text p::after {
+    width: 0.125em;
+    background: black;
+    animation: 
+        typewriter 3s steps(35) 1s forwards,
+        blink      750ms steps(2,start) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+/* --------- about --------- */
+
+.about-sect {
+    height: 100vh;
+    justify-content: center;
+    background-color: #f7f7f2;
+}
+
+.about-img {
+    margin-top: 35%;
+}
+
+.about-text {
+    margin-top: 30%;
+}
